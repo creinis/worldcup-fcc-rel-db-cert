@@ -119,7 +119,12 @@ ALTER SEQUENCE public.games_winner_id_seq OWNED BY public.games.winner_id;
 --
 -- Name: teams; Type: TABLE; Schema: public; Owner: freecodecamp
 --
+CREATE TABLE public.teams (
+    team_id integer NOT NULL,
+    name character varying(100) NOT NULL
+);
 
+ALTER TABLE public.teams OWNER TO freecodecamp;
 
 --
 -- Name: teams_team_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
