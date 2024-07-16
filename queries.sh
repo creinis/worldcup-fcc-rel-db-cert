@@ -37,3 +37,5 @@ echo "$($PSQL "SELECT DISTINCT(name) FROM teams INNER JOIN games ON teams.team_i
 echo -e "\nYear and team name of all the champions:"
 echo "$($PSQL "SELECT year, name FROM teams INNER JOIN games ON teams.team_id = games.winner_id WHERE round='Final' ORDER BY year")"
 
+echo -e "\nList of teams that start with 'Co':"
+echo "$($PSQL "SELECT name FROM teams WHERE name LIKE 'Co%'")"
