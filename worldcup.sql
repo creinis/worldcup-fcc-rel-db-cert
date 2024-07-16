@@ -235,22 +235,22 @@ INSERT INTO public.teams VALUES (438, 'United States');
 --
 -- Name: games_game_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
-
+SELECT pg_catalog.setval('public.games_game_id_seq', 160, true);
 
 --
 -- Name: games_opponet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
-
+SELECT pg_catalog.setval('public.games_opponet_id_seq', 32, true);
 
 --
 -- Name: games_winner_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
-
+SELECT pg_catalog.setval('public.games_winner_id_seq', 32, true);
 
 --
 -- Name: teams_team_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
-
+SELECT pg_catalog.setval('public.teams_team_id_seq', 438, true);
 
 --
 -- Name: games games_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
