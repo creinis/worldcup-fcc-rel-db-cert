@@ -267,8 +267,8 @@ ALTER TABLE ONLY public.teams
 --
 -- Name: teams teams_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
 --
-
-
+ALTER TABLE ONLY public.teams
+    ADD CONSTRAINT teams_pkey PRIMARY KEY (team_id);
 
 --
 -- Name: games games_opponet_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
