@@ -147,21 +147,23 @@ ALTER SEQUENCE public.teams_team_id_seq OWNED BY public.teams.team_id;
 --
 -- Name: games game_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.games ALTER COLUMN game_id SET DEFAULT nextval('public.games_game_id_seq'::regclass);
 
 --
 -- Name: games winner_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.games ALTER COLUMN winner_id SET DEFAULT nextval('public.games_winner_id_seq'::regclass);
 
 --
 -- Name: games opponent_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
 --
+ALTER TABLE ONLY public.games ALTER COLUMN opponent_id SET DEFAULT nextval('public.games_opponet_id_seq'::regclass);
 
 
 --
 -- Name: teams team_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
 --
+ALTER TABLE ONLY public.teams ALTER COLUMN team_id SET DEFAULT nextval('public.teams_team_id_seq'::regclass);
 
 
 --
