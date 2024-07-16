@@ -129,12 +129,20 @@ ALTER TABLE public.teams OWNER TO freecodecamp;
 --
 -- Name: teams_team_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
 --
+CREATE SEQUENCE public.teams_team_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
 
+ALTER TABLE public.teams_team_id_seq OWNER TO freecodecamp;
 
 --
 -- Name: teams_team_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
 --
-
+ALTER SEQUENCE public.teams_team_id_seq OWNED BY public.teams.team_id;
 
 --
 -- Name: games game_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
