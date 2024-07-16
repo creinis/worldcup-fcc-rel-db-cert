@@ -273,8 +273,8 @@ ALTER TABLE ONLY public.teams
 --
 -- Name: games games_opponet_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
 --
-
-
+ALTER TABLE ONLY public.games
+    ADD CONSTRAINT games_opponet_id_fkey FOREIGN KEY (opponent_id) REFERENCES public.teams(team_id);
 
 --
 -- Name: games games_winner_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
